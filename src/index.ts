@@ -5,7 +5,7 @@ import cron from 'node-cron';
 
 dotenv.config();
 
-const cronSchedule = '30 9 * * *';
+const cronSchedule = '0 9 * * *'
 
 const botToken: string = process.env.BOT_TOKEN || '';
 
