@@ -412,6 +412,9 @@ const sendGmMessage = async () => {
   );
 };
 
-cron.schedule(cronSchedule, sendGmMessage);
+cron.schedule(cronSchedule, sendGmMessage, {
+  scheduled: true,
+  timezone: 'Europe/Bucharest',
+});
 
 bot.launch();
